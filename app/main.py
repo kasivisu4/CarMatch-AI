@@ -11,5 +11,3 @@ async def add_request_id_middleware(request, call_next):
     return response
 
 app.include_router(search.router, prefix="/search", tags=["Search"])
-
-
